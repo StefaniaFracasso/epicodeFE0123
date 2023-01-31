@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: rgb(163,182,246);
+    background: linear-gradient(180deg, rgba(163,182,246,1) 0%, rgba(85,104,177,1) 50%, rgba(11,23,78,1) 100%);
+    font-family: 'Montserrat' , sans-serif;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 80vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    margin: 5px 0;
+}
+
+h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+#termsandconditions {
+    display: flex;
+    color: white;
+    padding: 15px 0 15px 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.music {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.generi-checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+#radio {
+    max-width: fit-content;
+    margin-left: 10px;
+}

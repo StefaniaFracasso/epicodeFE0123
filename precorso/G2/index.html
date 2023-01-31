@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form app streaming</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+        <h1>REGISTRATI PER ASCOLTARE<br>TUTTA LA MUSICA CHE VUOI</h1>
+    </div>
+    <div class="fields-container">
+        <form onsubmit="alert('Registrazione inviata')">
+            <div>
+                <label for="name">NOME</label>
+                <input type="text" placeholder="Scrivi il tuo nome">
+            </div>
+            <div>
+                <label for="surname">COGNOME</label>
+                <input type="text" placeholder="Scrivi il tuo cognome">
+            </div>
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" placeholder="Scrivi il tuo indirizzo email">
+            </div>
+            <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" placeholder="Scegli una password">
+            </div>
+            <div>
+                <label for="date">DATA</label>
+                <input type="date">                
+            </div>
+            <div>
+                <label for="phone">NUMERO DI TELEFONO</label>
+                <input type="tel" placeholder="Scrivi il tuo numero di telefono">
+            </div>
+            <div class="music">
+                <p><strong>Che musica ti piace?</strong></p>
+                <div class="generi-checkbox">
+                    <label for="rock">ROCK</label>
+                    <input type="checkbox">                    
+                    <label for="pop">POP</label>
+                    <input type="checkbox">                    
+                    <label for="indie">INDIE</label>
+                    <input type="checkbox">                    
+                </div>
+            </div>
+    </div>
+            <div id="termsandconditions">
+                        <label for="name">Accetto i termini e le condizioni</label>
+                        <input id="radio" type="radio">
+            </div>
+            <button type="submit">INVIA FORM</button>
+        </form>
+
+  </body>
+</html>
