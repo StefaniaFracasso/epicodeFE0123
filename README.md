@@ -1,2 +1,2 @@
 # epicodeFE0123
-Codici degli esercizi del corso Epicode Front-End Developer 0123
+Esercizi precorso e corso Epicode Front-End Developer 0123
