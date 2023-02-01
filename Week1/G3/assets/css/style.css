@@ -22,6 +22,7 @@ html, body {
     background-color: #fefbf1;
     color: #0c4d4d;
     border-top: 1px solid #ffd977;
+    padding-bottom: 3px;
 }
 
 .main-title {
