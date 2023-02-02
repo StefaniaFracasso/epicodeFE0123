@@ -2,9 +2,11 @@
 html,
 body {
   background-image: url(/assets/img/sfondo.png);
+  background-position-x: -3em;
   text-align: center;
   width: 97%;
   margin: 0 auto;
+  padding: .4em 0;
   font-family: "Poppins", sans-serif;
 }
 header {
