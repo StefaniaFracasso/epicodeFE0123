@@ -1,1 +1,136 @@
-/* Your styles here */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    color: #393d41;
+}
+
+.headingStyle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #25a2c3;
+    line-height: 1;
+}
+
+.white {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+#container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* header */
+
+#logo {
+    background-color: black;
+    text-align: center;
+}
+
+#logo img {
+    width: 130px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* banner iniziale */
+
+#corsoWebDeveloper {
+    background-image: url(../img/banner.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 50px;
+}
+
+#ancora {
+    background-color: orangered;
+    padding: 12px 30px;
+    border-radius: 5px;;
+}
+
+#ancora a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#corsoWebDeveloper p {
+    margin-bottom: 50px;
+}
+
+/* prima sezione */
+
+.roledescription {
+    padding-top: 50px;
+}
+
+#roundImage img {
+    border-radius: 50%;
+    width: 50%;
+}
+/* citazione centrale */
+
+#quote {
+    background-color: orangered;
+    padding: 50px auto;
+}
+
+#quote figure {
+    color: white;
+}
+
+#quote figure figcaption span {
+    font-size: 12px;
+}
+/* seconda sezione con box */
+
+.smallContainer {
+    width: 90%;
+    border: 1px solid lightgrey;
+    border-radius: 0 0 5px 5px;
+    margin: 30px;
+}
+
+.smallContainer img {
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    background-color: #25a2c3;
+    padding: 30px auto;
+    color: white;
+}
+
+#contattaci p {
+    color: white;
+    margin: 0 auto;
+    font-style: normal;
+}
+
+#contattaci p a {
+    color: white;
+    line-height: 1;
+    font-weight: 400;
+}
+
+#contattaci hr {
+    color: white;
+    max-width: 50%;
+    margin: 30px auto;
+}
+
+#googleMaps {
+    margin: 20px;
+}
