@@ -1,12 +1,12 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
 
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    width: 100%;
     color: #393d41;
+    text-align: center;
 }
 
 .headingStyle {
@@ -21,15 +21,7 @@ html, body {
     font-weight: bold;
     color: white;
     font-size: 32px;
-    line-height: 1.5;
 }
-
-#container {
-    text-align: center;
-    margin: 0 auto;
-}
-
-/* header */
 
 #logo {
     background-color: black;
@@ -39,7 +31,7 @@ html, body {
 #logo img {
     width: 130px;
     text-align: center;
-    margin: 30px auto;
+    margin: 1.5em auto;
 }
 
 /* banner iniziale */
@@ -48,45 +40,52 @@ html, body {
     background-image: url(../img/banner.jpg);
     background-position: top;
     background-size: cover;
-    padding: 50px;
+    padding: 2em;
 }
 
-#ancora {
-    background-color: orangered;
-    padding: 12px 30px;
-    border-radius: 5px;;
+#title {
+    padding-bottom: 1em;
 }
 
 #ancora a {
+    background-color: orangered;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     color: white;
-}
-
-#corsoWebDeveloper p {
-    margin-bottom: 50px;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
 }
 
 /* prima sezione */
 
-.roledescription {
-    padding-top: 50px;
+#primaSezione {
+    padding: 2em;
+}
+
+.roleDescription {
+    margin-bottom: 2em;
+    line-height: 1;
 }
 
 #roundImage img {
     border-radius: 50%;
-    width: 50%;
+    width: 70%;
 }
 /* citazione centrale */
 
 #quote {
+    display: block;
     background-color: orangered;
-    padding: 50px auto;
+    padding: 2em;
 }
 
 #quote figure {
     color: white;
+}
+
+#quote figure blockquote {
+    margin: 2em auto;
 }
 
 #quote figure figcaption span {
@@ -98,7 +97,7 @@ html, body {
     width: 90%;
     border: 1px solid lightgrey;
     border-radius: 0 0 5px 5px;
-    margin: 30px;
+    margin: 2em auto;
 }
 
 .smallContainer img {
@@ -111,21 +110,21 @@ html, body {
 
 /* footer */
 
-footer {
+#footer {
     background-color: #25a2c3;
-    padding: 30px auto;
+    padding: 2em;
     color: white;
 }
 
 #contattaci p {
     color: white;
     margin: 0 auto;
+    line-height: 1.5;
     font-style: normal;
 }
 
 #contattaci p a {
     color: white;
-    line-height: 1;
     font-weight: 400;
 }
 
