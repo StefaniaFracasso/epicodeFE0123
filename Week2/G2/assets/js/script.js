@@ -23,8 +23,8 @@ document.getElementById('let2').innerHTML = nomeCliente;
 
 var iniziale= 15;
 document.getElementById('iniziale').innerHTML += iniziale;
-document.getElementById('valore1').innerHTML += iniziale+iniziale + ', '+ (iniziale+iniziale+1);
-document.getElementById('valore2').innerHTML += iniziale-10 + ', '+ (iniziale-11);
+document.getElementById('valore1').innerHTML += iniziale+iniziale + ', ';
+document.getElementById('valore2').innerHTML += iniziale-10 + ', ';
 document.getElementById('valore3').innerHTML += iniziale*3;
 document.getElementById('valore4').innerHTML += iniziale/3;
 document.getElementById('valore5').innerHTML += iniziale + ' '+ 'è un numero'
