@@ -49,9 +49,7 @@
   let numero1 = 3
   let numero2 = 5
 
-  if (numero1 == 8 || numero2 == 8) {
-    document.getElementById('esercizio4').innerHTML = 'verificato'
-  } else if (numero1 + numero2 == 8) {
+  if (numero1 == 8 || numero2 == 8 || numero1 + numero2 ==8 || numero1 - numero2 == 8 || numero2 - numero1 == 8) {
     document.getElementById('esercizio4').innerHTML = 'verificato'
   } else {
     document.getElementById('esercizio4').innerHTML = 'non verificato'
@@ -69,9 +67,9 @@
   let shippingFee = 10
 
   if (totalShoppingCart > 50) {
-    document.getElementById('esercizio5').innerHTML = totalShoppingCart
+    document.getElementById('esercizio5').innerHTML = 'la spesa finale è ' + totalShoppingCart
   } else if (totalShoppingCart <= 50) {
-    document.getElementById('esercizio5').innerHTML = totalShoppingCart + shippingFee
+    document.getElementById('esercizio5').innerHTML = 'la spesa finale è ' + (totalShoppingCart + shippingFee)
   }
 }
 
@@ -83,12 +81,12 @@
 {
     let totalShoppingCart = 35
     let shippingFee = 10
-    let blackFriday = totalShoppingCart - (totalShoppingCart*0.2)
+    let blackFriday = totalShoppingCart*0.8
   
     if (blackFriday > 50) {
-      document.getElementById('esercizio6').innerHTML = blackFriday
+      document.getElementById('esercizio6').innerHTML = 'la spesa finale è ' + blackFriday
     } else if (blackFriday <= 50) {
-      document.getElementById('esercizio6').innerHTML = blackFriday + shippingFee
+      document.getElementById('esercizio6').innerHTML = 'la spesa finale è ' + (blackFriday + shippingFee)
     }
   }
 
@@ -188,7 +186,7 @@ if (val < 5) {
 
   me.city = 'Toronto'
   delete me[1];
-  delete me.skills[2];
+  me.skills.pop()
   document.getElementById('esercizio13').innerHTML =
     me.name + ', ' + me.skills + ', ' + me.city
 }
@@ -197,8 +195,26 @@ if (val < 5) {
     Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
   */
 
+    var array = [];
+    array.push('1');
+    array.push('2');
+    array.push('3');
+    array.push('4');
+    array.push('5');
+    array.push('6');
+    array.push('7');
+    array.push('8');
+    array.push('9');
+    array.push('10');
+
+    document.getElementById('esercizio14').innerHTML = array
+
+
+
 /* ESERCIZIO 15
     Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
   */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+array.splice(9,10,100);
+document.getElementById('esercizio15').innerHTML = array
+
