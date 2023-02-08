@@ -98,19 +98,30 @@
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    let numero = 3
+
+    document.getElementById('esercizio8').innerHTML = 'var è' + ' ' + typeof numero
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+    let numero = 3
+
+    if (numero % 2 == 0) {
+        document.getElementById('esercizio9').innerHTML = numero + " è pari"
+    }
+    else {
+        document.getElementById('esercizio9').innerHTML = numero + " è dispari"
+    }
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
