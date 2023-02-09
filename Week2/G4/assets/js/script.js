@@ -189,7 +189,7 @@ const starWarsCharacters = [
     var massaTotale = 0;
     var i = 0;
 
-    while (i < starWarsCharacters.lenght) {
+    while (i < starWarsCharacters.length) {
         massaTotale += Number(starWarsCharacters[i].mass);
         i++;
     }
