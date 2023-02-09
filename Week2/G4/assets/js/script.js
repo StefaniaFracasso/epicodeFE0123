@@ -214,8 +214,8 @@ const starWarsCharacters = [
     case massaTotale < 500:
         console.log ('Ship is under loaded')
         break;
-    case massaTotale = 500:
-        console.log ('Ship is half loade')
+    case massaTotale == 500:
+        console.log ('Ship is half loaded')
         break;
     case massaTotale > 700:
         console.log ('Warning: Load is over 700')
