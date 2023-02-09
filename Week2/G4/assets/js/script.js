@@ -211,7 +211,7 @@ const starWarsCharacters = [
   */
   
   switch (true) {
-    case massaTotale <500:
+    case massaTotale < 500:
         console.log ('Ship is under loaded')
         break;
     case massaTotale = 500:
