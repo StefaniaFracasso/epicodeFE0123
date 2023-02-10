@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=VT323&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#container {
+  width: 100%;
+  text-align: center;
+}
+
+#logo {
+    width: 100%;
+
+}
+
+#logo img {
+    width: 30%;
+    padding: 5px 0;
+}
+
+#calcolatrice {
+  border: 2px solid black;
+  -webkit-box-shadow: -4px 7px 11px 0px rgba(120, 120, 120, 1);
+  -moz-box-shadow: -4px 7px 11px 0px rgba(120, 120, 120, 1);
+  box-shadow: -4px 7px 11px 0px rgba(120, 120, 120, 1);
+  border-radius: 5px;
+  width: 12em;
+  background-color: #c1c1c1;
+  padding: 1em 0;
+  margin: auto;
+}
+
+#inputField {
+  margin: 0;
+  padding: 0;
+  width: 93%;
+  font-family: "VT323", monospace;
+  font-size: 30px;
+  text-align: right;
+  font-weight: 200;
+  border: 1px solid #353440;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #f7f7f7;
+}
+
+#tasti {
+  padding: 0.2em;
+}
+.tasto {
+  background-color: #353440;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  width: 3em;
+  padding: 0.5em;
+  margin: 0.2em 0;
+  border-radius: 5px;
+}
+
+#tastoRosso {
+  background-color: #cb3234;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  width: 3em;
+  padding: 0.5em;
+  margin: 0.1em 0;
+  border-radius: 5px;
+}
+
+#uguale {
+  background-color: #353440;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  width: 95%;
+  padding: 0.6em;
+  margin: 0.1em 0;
+  border-radius: 5px;
+}
