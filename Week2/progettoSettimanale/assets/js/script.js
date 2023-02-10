@@ -2,6 +2,7 @@ var elemento1 = 0
 var elemento2 = 0
 var operatore
 
+
 function inputNumber (digit) {
   document.getElementById('inputField').value += digit
 }
@@ -21,14 +22,14 @@ function memorizzaElemento2 () {
 function sqrt () {
   elemento1 = document.getElementById('inputField').value
   elemento1 = Number(elemento1)
-  document.getElementById('inputField').value = Math.sqrt(elemento1)
+  document.getElementById('inputField').value = (elemento1**elemento1) //Math.sqrt(elemento1)
 }
 
 function pow () {
-    elemento1 = document.getElementById('inputField').value
-    elemento1 = Number(elemento1)
-    document.getElementById('inputField').value = Math.pow(elemento1,2)
-  }
+  elemento1 = document.getElementById('inputField').value
+  elemento1 = Number(elemento1)
+  document.getElementById('inputField').value = Math.pow(elemento1, 2)
+}
 
 function calcola () {
   elemento1 = Number(elemento1)
