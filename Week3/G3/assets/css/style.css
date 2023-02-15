@@ -3,7 +3,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
 }
 
 #container {
@@ -19,6 +18,7 @@ html, body {
     padding: 2em 1em;
     border-radius: 5px;
     margin: 10px auto;
+    background-color: rgba(72, 207, 162, 0.301);
 }
 
 #input-task {
@@ -44,6 +44,7 @@ html, body {
     padding: 1em;
     border-radius: 5px;
     margin: 10px auto;
+    background-color: rgba(72, 207, 162, 0.301);
 }
 ul,li {
     width: 90%;
@@ -70,7 +71,7 @@ li button {
 }
 
 ul li:hover {
-    background: #ddd;
+    background: white;
 }
 
 :checked {
