@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W3 D2</title>
-</head>
-<body>
-    
-<div id="container">
-    <h2>Scegli il film:</h2>
-    <select name="" id="select">
+  </head>
+  <body>
+    <div id="container">
+      <h2>Scegli il film:</h2>
+      <select name="" id="select">
         <option value="" selected></option>
-        
-    </select>
-    <button type="button" id="myBtn">CERCA FILM</button>
-    <h3 id="filmTrovato"></h3>
-</div>
+      </select>
+      <button type="button" id="myBtn">SELEZIONA FILM</button>
+      <div id="filmTrovato"></div>
+      <div id="searchBar">
+        <h2>Cerca il tuo film</h2>
+        <fieldset>
+            <input type="text" id="text" name="text">
+            <button type="button" id="cerca">CERCA</button>
+        </fieldset>
+        <div id="risultatiRicerca"></div>
 
-<script src="assets/script/script.js"></script>
-</body>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
