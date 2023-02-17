@@ -143,6 +143,7 @@ changeFooterText();
 
 const inputField = document.getElementById('input-field');
 inputField.addEventListener('input', function (event) {
+  console.log(event.data);
     console.log(event.target.value)});
 
 /* ESERCIZIO 12
