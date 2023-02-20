@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia calcolatrice in JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>La mia calcolatrice in JS</h1>
+        <div id="calcolatrice">
+            <div id="logo">
+                <img src="assets/img/casio-logo.png" alt="logo Casio">
+            </div>
+            <div id="campoTesto">
+                <input type="text" id="inputField" name="inputField" readonly />
+            </div>
+            <div id="tasti">
+                <div id="operazioniSpeciali">
+                    <button class="tastoSpeciale" type="button" id="radiceQuadrata" onclick="sqrt()">&#8730;</button>
+                    <button class="tastoSpeciale" type="button" id="potenza" onclick="pow()">^</button>
+                    <button class="tastoSpeciale" type="button" id="backspace" onclick="backspace()">&#9003;</button>
+                </div>
+                <div id="primaRiga">
+                    <button class="tasto" type="button" id="7" onclick="inputNumber(7)">7</button>
+                    <button class="tasto" type="button" id="8" onclick="inputNumber(8)">8</button>
+                    <button class="tasto" type="button" id="9" onclick="inputNumber(9)">9</button>
+                    <button class="tasto" type="button" id="/" onclick="memorizzaOperazione('/')">/</button>
+                </div>
+                <div id="secondaRiga">
+                    <button class="tasto" type="button" id="4" onclick="inputNumber(4)">4</button>
+                    <button class="tasto" type="button" id="5" onclick="inputNumber(5)">5</button>
+                    <button class="tasto" type="button" id="6" onclick="inputNumber(6)">6</button>
+                    <button class="tasto" type="button" id="*" onclick="memorizzaOperazione('*')">X</button>
+                </div>
+                <div id="terzaRiga">
+                    <button class="tasto" type="button" id="1" onclick="inputNumber(1)">1</button>
+                    <button class="tasto" type="button" id="2" onclick="inputNumber(2)">2</button>
+                    <button class="tasto" type="button" id="3" onclick="inputNumber(3)">3</button>
+                    <button class="tasto" type="button" id="-" onclick="memorizzaOperazione('-')">-</button>
+                </div>
+                <div id="quartaRiga">
+                    <button type="button" id="tastoRosso" onclick="cancellaField()">C</button>
+                    <button class="tasto" type="button" id="0" onclick="inputNumber(0)">0</button>
+                    <button class="tasto" type="button" id="." onclick="inputNumber('.')">.</button>
+                    <button class="tasto" type="button" id="+" onclick="memorizzaOperazione('+')">+</button>
+                </div>
+            </div>
+            <div id="tastoUguale">
+                <button type="button" id="uguale" onclick="calcola()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script_2.js"></script>
+</body>
+</html>
