@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="assets/img/epicode_logo.png" alt="logo Epicode" id="logo">
+        <div id="timer">
+        </div>
+    </header>
+    <div id="spazio">
+    </div>
+    <div id="quizContainer">
+        <h2 id="testoDomanda"></h2>
+        <div id="risposte">
+            <div>
+                <button type="button" class="pulsante" id="risposta0" onclick="registraRisposta(0)"></button>
+                <button type="button" class="pulsante" id="risposta1" onclick="registraRisposta(1)"></button>
+            </div>
+            <div>
+                <button type="button" class="pulsante" id="risposta2" onclick="registraRisposta(2)"></button>
+                <button type="button" class="pulsante" id="risposta3" onclick="registraRisposta(3)"></button>
+            </div>
+        </div>
+            <div id="contatore">
+                <h3 id="contaDomande">QUESTION <span class="questionNumber"></span><span class="questionTot"></span></h3>
+            </div>
+    </div>
+    <div id="resultsContainer">
+        <div>
+            <h2>Results</h2>
+            <h3>The summary of your answers:</h3>
+        </div>
+        <div id="percentualiRisultati">
+            <span>
+                <h2>Correct</h2>
+                <h2 id="percentualiCorrette"></h2>
+                <h3 id="contatoreCorrette"><span id="corrette"></span><span class="domande"></span></h3>
+            </span>
+            <span id="grafico">
+                <canvas id="graficoRisposte" width="300" height="300"></canvas>
+            </span>
+            <span>
+                <h2>Wrong</h2>
+                <h2 id="percentualiSbagliate"></h2>
+                <h3 id="contatoreSbagliate"><span id="sbagliate"></span><span class="domande"></span></h3>
+            </span>
+        </div>
+        <div>
+            <h3 id="messaggio"><b></b></h3>
+        </div>
+        <div>
+            <button type="button" id="rateButton" onclick="window.location.href='feedback.html'">RATE US</button>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
