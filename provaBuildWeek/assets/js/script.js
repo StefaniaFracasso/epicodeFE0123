@@ -153,8 +153,8 @@ const domande = [
 // timer
 
 var timeLeft;
-var timer = document.getElementById('timer')
-var timerId = setInterval(countdown, 1000)
+var timer = document.getElementById('timer');
+var timerId = setInterval(countdown, 1000);
 
 function countdown () {
   if (timeLeft <= 0) {
@@ -166,7 +166,7 @@ function countdown () {
   }
 }
 // variabili e funzione per generare le domande e per rendere visibile il div dei risultati una volta terminate le domande
-var totaleDomande = document.querySelector('.questionTot')
+var totaleDomande = document.querySelector('.questionTot');
 totaleDomande.innerHTML = ' / ' + domande.length
 var indiceDomanda
 var messaggio
@@ -219,7 +219,7 @@ function generaDomanda (i) {
     });
     
   }
-  var questionNumber = document.querySelector('.questionNumber')
+  var questionNumber = document.querySelector('.questionNumber');
   questionNumber.innerHTML = indiceDomanda + 1
   countdown()
 }
@@ -234,7 +234,7 @@ var percSbagliate = 0;
 var sbagliate = 0;
 
 function registraRisposta (j) {
-  var risposte = domande[indiceDomanda].risposte
+  var risposte = domande[indiceDomanda].risposte;
   if (risposte[j].correct === true) {
     risultato++
   }
