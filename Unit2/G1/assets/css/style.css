@@ -210,8 +210,8 @@ footer a {
 @media screen and (min-width:1199px) {
 
     header {
-        margin-right: 3em;
-        margin-left: 3em;
+        margin-right: 4em;
+        margin-left: 4em;
         text-align: left;
         padding: 1em;
     }
@@ -241,8 +241,8 @@ footer a {
     }
 
     main {
-        margin-right: 3em;
-        margin-left: 3em;
+        margin-right: 4em;
+        margin-left: 4em;
     }
 
     h1{
