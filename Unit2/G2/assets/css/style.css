@@ -21,21 +21,21 @@ hr {
     position: fixed;
     bottom: 5px;
     right: -5px;
-    z-index: 1;
+    z-index: 5;
   }
 
   .calendar {
     position: fixed;
     bottom: 60px;
     right: -5px;
-    z-index: 1;
+    z-index: 5;
   }
 
   .social {
     position: fixed;
     bottom: 115px;
     right: -5px;
-    z-index: 1;
+    z-index: 5;
   }
 }
 
@@ -44,21 +44,21 @@ hr {
     position: fixed;
     bottom: 5px;
     right: -5px;
-    z-index: 1;
+    z-index: 5;
   }
 
   .calendar {
     position: fixed;
     top: 60px;
     right: -5px;
-    z-index: 1;
+    z-index: 5;
   }
 
   .social {
     position: fixed;
     top: 5px;
     right: -5px;
-    z-index: 1;
+    z-index: 5;
   }
 }
 
@@ -79,7 +79,7 @@ header {
   padding: 2em 1.5em;
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 3;
 }
 
 @media screen and (min-width: 800px) {
@@ -407,7 +407,7 @@ aside div {
   position: absolute;
   top: 7px;
   right: 5px;
-  font-size: 4em;
+  font-size: 3.5em;
   color: #8f8f8f66;
 }
 
