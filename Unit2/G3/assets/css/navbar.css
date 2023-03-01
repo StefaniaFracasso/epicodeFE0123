@@ -1,0 +1,66 @@
+.navbar {
+  width: 100%;
+  background-color: #fbf7e3;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul li {
+  background-color: #f3df85;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color: #612407;
+  font-weight: 700;
+}
+
+#shop-button {
+  display: flex;
+  align-items: center;
+}
+
+#shop-button p {
+  margin-left: 20px;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .navbar ul li:nth-child(1) {
+    order: 2;
+  }
+
+  .navbar ul li:nth-child(2) {
+    order: 3;
+  }
+
+  .navbar ul li:nth-child(3) {
+    order: 1;
+  }
+
+  .navbar ul li:nth-child(4) {
+    order: 4;
+  }
+  .navbar ul li:nth-child(5) {
+    order: 5;
+  }
+
+  #shop-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar ul li {
+    margin: 5px;
+  }
+}

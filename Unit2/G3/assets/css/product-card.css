@@ -1,0 +1,58 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid transparent;
+  border-radius: 20%;
+  overflow: hidden;
+  background-color: #fbf7e3;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.product-name {
+  color: #612407;
+}
+
+.product-name h2 {
+  margin: 0;
+  font-size: 1.5;
+  font-weight: 700;
+}
+
+.product-name p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.product-price {
+  color: #612407;
+  font-size: 1.3em;
+}
+
+.card button {
+  width: 45%;
+  align-self: center;
+  background-color: #f3df85;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: #612407;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
