@@ -187,14 +187,17 @@ h3 {
 /* ARTICOLO */
 
 .article {
-  width: 80%;
+  display: flex;
+  width: 90%;
   border: 1px solid transparent;
   border-radius: 30px;
   background-color: #fbf7e3;
   padding: 20px;
-  margin: 0 auto;
+  margin: 10px;
 }
 
 .article img {
-  width: 100%;
+  width: 50%;
+  order: -1;
+  margin: 10px;
 }
