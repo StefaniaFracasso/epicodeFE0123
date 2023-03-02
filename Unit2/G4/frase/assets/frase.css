@@ -44,7 +44,7 @@ html {
 
 .parole i {
   position: absolute;
-  bottom: 350px;
+  bottom: 395px;
   overflow: hidden;
   animation: rotazione 6s linear infinite;
   opacity: 0;
