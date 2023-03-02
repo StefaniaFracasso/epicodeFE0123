@@ -55,7 +55,7 @@ html {
 @keyframes rotazione {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-100px);
   }
 
   20% {
@@ -70,12 +70,12 @@ html {
 
   50% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(100px);
   }
 
   100% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(100px);
   }
 }
 
