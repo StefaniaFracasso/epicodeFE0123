@@ -36,17 +36,35 @@ p {
 }
 
 .giallo {
-  background-color: #fcf9ba;
+  background: rgb(252, 249, 186);
+  background: linear-gradient(
+    180deg,
+    rgba(252, 249, 186, 1) 0%,
+    rgba(255, 252, 186, 1) 72%,
+    rgba(184, 184, 184, 1) 100%
+  );
   transform: rotate(-5deg);
 }
 
 .verde {
-  background-color: #ceedc7;
+  background: rgb(206, 237, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(206, 237, 199, 1) 0%,
+    rgba(206, 237, 199, 1) 72%,
+    rgba(184, 184, 184, 1) 100%
+  );
   transform: rotate(5deg);
 }
 
 .viola {
-  background-color: #ba94d1;
+  background: rgb(186, 148, 209);
+  background: linear-gradient(
+    180deg,
+    rgba(186, 148, 209, 1) 0%,
+    rgba(186, 148, 209, 1) 72%,
+    rgba(184, 184, 184, 1) 100%
+  );
 }
 
 .post-it:hover {
