@@ -1,0 +1,55 @@
+body,
+html {
+  background-color: grey;
+  height: 100%;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.post-it {
+  width: 350px;
+  height: 250px;
+  border: 1px solid black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  font-family: "Indie Flower";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.giallo {
+  background-color: #fcf9ba;
+  transform: rotate(-5deg);
+}
+
+.verde {
+  background-color: #ceedc7;
+  transform: rotate(5deg);
+}
+
+.viola {
+  background-color: #ba94d1;
+}
+
+.post-it:hover {
+  transform: scale(1.2) rotate(0);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
