@@ -46,7 +46,7 @@ html {
   position: absolute;
   bottom: 350px;
   overflow: hidden;
-  animation: rotazione 5s linear infinite;
+  animation: rotazione 6s linear infinite;
   opacity: 0;
 }
 
