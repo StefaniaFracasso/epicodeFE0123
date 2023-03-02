@@ -47,7 +47,7 @@ html {
   margin-left: 10px;
   position: absolute;
   overflow: hidden;
-  animation: rotazione 6s linear infinite;
+  animation: rotazione 6s ease-in-out infinite;
   opacity: 0;
   text-shadow: none;
 }
