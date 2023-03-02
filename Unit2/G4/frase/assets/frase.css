@@ -58,17 +58,17 @@ html {
     transform: translateY(-50px);
   }
 
-  2% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-
-  18% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-
   20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  50% {
     opacity: 0;
     transform: translateY(50px);
   }
