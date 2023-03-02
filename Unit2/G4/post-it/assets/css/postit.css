@@ -52,4 +52,5 @@ p {
 .post-it:hover {
   transform: scale(1.2) rotate(0);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
