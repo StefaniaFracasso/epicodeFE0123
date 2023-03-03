@@ -229,6 +229,8 @@ hr {
 #second-section {
   display: flex;
   margin: 30px;
+  align-items: flex-start;
+  /* occorre mettere align-items:flex-start per far si che tutti i figli del contenitore flex vengano allineati all'inizio e renda possibile utilizzare position:sticky con i figli */
 }
 
 /* OTHER ARTICLES */
@@ -292,7 +294,7 @@ hr {
 
 .sticky {
   position: sticky;
-  top: 0;
+  top: 90px;
 }
 
 #sidebar h3 {
