@@ -16,7 +16,10 @@ console.log(myself)
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish', 'chinchilla']
-console.log(pets)
+
+for (i=0; i<pets.length; i++) {
+    console.log(pets[i])
+}
 
 /* ESERCIZIO 3
     Scrivi del codice per aggiungere all'array pets un nuovo elemento.
