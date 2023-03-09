@@ -1,0 +1,35 @@
+@import "./reset";
+@import "./animations";
+@import "./buttons";
+@import "./colors";
+@import "./fonts";
+@import "./mixins";
+@import "./spacing";
+
+.navbar {
+    @include general;
+    @include flex;
+}
+
+.navbar-link {
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+    li {
+        margin-right: 10px;
+        font-size: $standard-size
+    }
+}
+
+.hero {
+    @include spacing;
+    @include general;
+    @include flex;
+}
+
+
+.image-grid {
+    @include flex;
+    background-color: white;
+}
