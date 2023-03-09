@@ -1,8 +1,8 @@
+@import "./colors";
+@import "./fonts";
 @import "./reset";
 @import "./animations";
 @import "./buttons";
-@import "./colors";
-@import "./fonts";
 @import "./mixins";
 @import "./spacing";
 
@@ -15,10 +15,11 @@
     ul{
         list-style-type: none;
         display: flex;
+        cursor: pointer;
     }
     li {
         margin-right: 10px;
-        font-size: $standard-size
+        font-size: $standard-size;
     }
 }
 
@@ -26,10 +27,32 @@
     @include spacing;
     @include general;
     @include flex;
+    h1 {
+        font-size: $bigger-size;
+    }
+    h2 {
+        font-size: $medium-size
+    }
 }
 
 
 .image-grid {
+    @include spacing;
     @include flex;
+    flex-wrap: wrap;
     background-color: white;
+
+}
+
+.button1 {
+    @include button;
+    background-color: $green;
+}
+.button2 {
+    @include button;
+    background-color: $orange;
+}
+.button3 {
+    @include button;
+    background-color: $blue;
 }

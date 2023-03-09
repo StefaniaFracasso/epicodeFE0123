@@ -2,3 +2,20 @@
     color: $text-color;
     background-color: $background;
 }
+
+@mixin flex () {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin spacing () {
+    padding: 50px 20px; 
+}
+
+@mixin button () {
+    padding: 10px 15px;
+    color: $text-color;
+    font-size: $standard-size;
+    border-radius: 10px;
+    cursor: pointer;
+}
