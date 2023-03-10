@@ -59,3 +59,9 @@ hr {
     color: white !important;
     border: none !important;
 } 
+
+@media screen and (max-width:1204px) {
+    .closing-buttons {
+        width: 100%;
+    }
+}
