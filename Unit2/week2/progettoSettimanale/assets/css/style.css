@@ -1,0 +1,61 @@
+html, body {
+    margin:0;
+    padding:0;
+    width: 100%;
+    background-color: #212529;
+}
+
+.right-icons:hover{
+    cursor: pointer;
+}
+.nav-item:active{
+    font-weight: bold;
+}
+
+.image-thumbnail img {
+    transition: all 1s ease;
+}
+.image-thumbnail img:hover {
+    transform: scale(1.3);
+    -webkit-box-shadow: 3px 3px 5px #000;
+    -moz-box-shadow: 3px 3px 5px #000;
+    box-shadow: 3px 3px 5px #000;
+    z-index: 1;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav-footer a:hover {
+    font-weight: bold;
+}
+
+.social-icons {
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+form, input, label, p {
+    color: white !important;
+}
+
+hr {
+    color: grey !important;
+    opacity: 1 !important;
+}
+
+.button-edit {
+    letter-spacing: 5px;
+}
+
+.button-save:hover {
+    background-color: red !important;
+    color: white !important;
+    border: none !important;
+} 
