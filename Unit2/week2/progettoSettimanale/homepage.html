@@ -1,237 +1,1420 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Netflix</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.webp">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.webp" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-        <!-- navbar -->
-        <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-                <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <img src="./assets/img/netflix_logo.png" alt="neflix_logo" width="100px">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon">
-                              <i class="bi bi-list fs-3"></i>
-                          </span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">TV Shows</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Movies</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Recently Added</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">My list</a>
-                              </li>
-                          </ul>
-                        <div class="d-flex text-light align-items-center">
-                            <div class="me-3">
-                                <i class="bi bi-search right-icons"></i>
-                            </div>
-                            <div class="me-3">
-                                <p class="h6 m-0 right-icons">KIDS</p> 
-                            </div>
-                            <div class="me-3">
-                                <i class="bi bi-bell-fill right-icons"></i>
-                            </div>
-                            <div>
-                                <a href="profile_page.html"><img src="./assets/img/avatar.png" alt="profile_avatar" width="30px" height="30px" class="right-icons"></a>
-                                <i class="bi bi-caret-down-fill right-icons"></i>
+    <!-- navbar -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img
+            src="./assets/img/netflix_logo.png"
+            alt="neflix_logo"
+            width="100px"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="bi bi-list fs-3"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My list</a>
+              </li>
+            </ul>
+            <div class="d-flex text-light align-items-center">
+              <div class="me-3">
+                <i class="bi bi-search right-icons"></i>
+              </div>
+              <div class="me-3">
+                <p class="h6 m-0 right-icons">KIDS</p>
+              </div>
+              <div class="me-3">
+                <i class="bi bi-bell-fill right-icons"></i>
+              </div>
+              <div>
+                <a href="profile_page.html"
+                  ><img
+                    src="./assets/img/avatar.png"
+                    alt="profile_avatar"
+                    width="30px"
+                    height="30px"
+                    class="right-icons"
+                /></a>
+                <i class="bi bi-caret-down-fill right-icons"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid text-white bg-dark pb-3">
+        <!-- sezione iniziale con scelta genere e scelta layout -->
+        <div class="row mx-2 mx-md-5 py-4 d.flex justify-content-md-between">
+          <div
+            class="col col-md-8 d-flex p-2 p-lg-0 justify-content-between justify-content-md-start align-items-center"
+          >
+            <p class="h2 me-5">TV Shows</p>
+            <div class="dropdown">
+              <button
+                class="btn btn-dark dropdown-toggle border border-white rounded-0"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Comedy</a></li>
+                <li><a class="dropdown-item" href="#">Korean Drama</a></li>
+                <li><a class="dropdown-item" href="#">Rom-com</a></li>
+                <li><a class="dropdown-item" href="#">Documentaries</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col col-md-4 d-flex p-0 justify-content-md-end align-items-center d-none d-md-inline-flex"
+          >
+            <p class="border border-white px-2 m-0">
+              <i class="bi bi-text-left right-icons"></i>
+            </p>
+            <p class="border border-white px-2 m-0">
+              <i class="bi bi-grid right-icons"></i>
+            </p>
+          </div>
+        </div>
+        <!-- trending now -->
+        <p class="h4 ms-3 mx-md-5 mt-2">Trending Now</p>
+        <div id="carousel1" class="carousel slide pt-2 pb-3">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
+                <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media0.webp" alt="sherlock">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                      </div> 
+                </div>
+                <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media1.jpg" alt="american factory">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media2.webp" alt="the good place">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media3.webp" alt="genius of the modern world">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media4.jpg" alt="cubs">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media5.webp" alt="the china hustle">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
+                <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media6.jpg" alt="the social dilemma">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media7.webp" alt="arog">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media8.webp" alt="yahsi bati">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media9.jpg" alt="connected">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media10.jpg" alt="spy">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                    <div class="card">
+                        <img src="./assets/img/media11.jpg" alt="the college">
+                        <div class="card-body d-none">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="card-icons">
+                                        <i class="bi bi-play-circle"></i>
+                                        <i class="bi bi-plus-circle"></i>
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                    </div>
+                                    <div class="card-icons">
+                                        <i class="bi bi-arrow-down-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class="text-success m-0 me-2 size ">XX% compatibile</p>
+                                        <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                        <p class="m-0 me-2 size">16 episodi</p>
+                                        <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                  </div>
+
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev position-prev"
+              type="button"
+              data-bs-target="#carousel1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next position-next"
+              type="button"
+              data-bs-target="#carousel1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Watch It Again -->
+        <p class="h4 ms-3 mx-md-5 mt-2">Watch It Again</p>
+        <div id="carousel2" class="carousel slide pt-2 pb-3">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media12.jpg" alt="tribes of Europe">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media13.jpg" alt="narcos">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media14.webp" alt="breaking bad">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size   ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media15.jpg" alt="explained">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media16.webp" alt="rick and morty">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media17.jpg" alt="the white helmets">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
                   </div>
                 </div>
-              </nav>
-        </header>
-        <main>
-        <div class="container-fluid text-white bg-dark pb-3">
-            <!-- sezione iniziale con scelta genere e scelta layout -->
-                <div class="row mx-2 mx-md-5 py-4 d.flex justify-content-md-between">
-                    <div class="col col-md-8 d-flex p-2 p-lg-0 justify-content-between justify-content-md-start align-items-center">
-                        <p class="h2 me-5">TV Shows</p>
-                        <div class="dropdown">
-                            <button class="btn btn-dark dropdown-toggle border border-white rounded-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              Genres
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Comedy</a></li>
-                              <li><a class="dropdown-item" href="#">Korean Drama</a></li>
-                              <li><a class="dropdown-item" href="#">Rom-com</a></li>
-                              <li><a class="dropdown-item" href="#">Documentaries</a></li>
-                            </ul>
+              </div>
+  
+              <div class="carousel-item">
+                <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media18.jpg" alt="spycraft">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
+                        </div> 
                     </div>
-                    <div class="col col-md-4 d-flex p-0 justify-content-md-end align-items-center d-none d-md-inline-flex">
-                        <p class="border border-white px-2 m-0"><i class="bi bi-text-left right-icons"></i></p>
-                        <p class="border border-white px-2 m-0"><i class="bi bi-grid right-icons"></i></p>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media19.webp" alt="better call saul">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
                     </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media20.jpg" alt="inside bill's brain">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media21.webp" alt="vikings">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media22.webp" alt="how i met your mother">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media23.webp" alt="dream big">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+  
                 </div>
-                <!-- trending now -->
-                <p class="h4 ms-3 mx-md-5 mt-2">Trending Now</p>
-                <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media0.webp" alt="sherlock" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media2.webp" alt="the good place" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media3.webp" alt="genius of the modern world" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media4.jpg" alt="cuba" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media5.webp" alt="the china hustle" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media6.jpg" alt="the social dilemma" class="img-fluid">
-                    </div>
-                </div>
-                <!-- Watch It Again -->
-                <p class="h4 ms-3 mx-md-5 mt-2">Watch It Again</p>
-                <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media7.webp" alt="arog" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media8.webp" alt="yahsi bati" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media9.jpg" alt="connected" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media10.jpg" alt="spy" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media11.jpg" alt="the collage admissions scandal" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media12.jpg" alt="tribes of europe" class="img-fluid">
-                    </div>
-                </div>
-                <!-- new releases -->
-                <p class="h4 ms-3 mx-md-5 mt-2">New Releases</p>
-                <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media13.jpg" alt="narcos" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media14.webp" alt="breaking bad" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media15.jpg" alt="explained" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media16.webp" alt="rick and morty" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media17.jpg" alt="the white helmets" class="img-fluid">
-                    </div>
-                    <div class="col-sm-4 col-lg-2 p-1 image-thumbnail">
-                        <img src="./assets/img/media18.jpg" alt="spycraft" class="img-fluid">
-                    </div>
-                </div>
+              </div>
+  
+              <button
+                class="carousel-control-prev position-prev"
+                type="button"
+                data-bs-target="#carousel2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next position-next"
+                type="button"
+                data-bs-target="#carousel2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-        </main>
-        <footer class="bg-dark pt-5 ps-2 ps-md-0">
-            <div class="container bg-dark text-white-50">
-                <div class="row">
-                    <div class="col pb-2">
-                        <i class="bi bi-facebook fs-3 me-3 social-icons"></i>
-                        <i class="bi bi-instagram fs-3 me-3 social-icons"></i>
-                        <i class="bi bi-twitter fs-3 me-3 social-icons"></i>
-                        <i class="bi bi-youtube fs-3 me-3 social-icons"></i>
+          </div>
+        <!-- new releases -->
+        <p class="h4 ms-3 mx-md-5 mt-2">New Releases</p>
+        <div id="carousel3" class="carousel slide pt-2 pb-3">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media24.jpg" alt="our planet">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media25.webp" alt="modern family">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media26.webp" alt="leyla and mecnun">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media27.jpg" alt="history 101">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media28.jpg" alt="peaky blinders">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media29.jpg" alt="my octopus teacher">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                  </div>
+                </div>
+              </div>
+  
+              <div class="carousel-item">
+                <div class="row mx-2 mx-md-5 pt-2 pb-4 d-flex flex-wrap">
+                  <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media30.jpg" alt="magic for humans">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
                     </div>
-                    <div class="row d-flex pb-2">
-                        <div class="col-6 col-md-3">
-                            <ul class="list-unstyled">
-                                <li class="nav-footer">
-                                    <a href="#">Audio and Subtitles</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Media Center</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Privacy</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <ul class="list-unstyled">
-                                <li class="nav-footer">
-                                    <a href="#">Audio Description</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Investor Relations</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Legal Notices</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <ul class="list-unstyled">
-                                <li class="nav-footer">
-                                    <a href="#">Help Center</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Jobs</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Cookie Preferences</a>
-                                </li>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media31.webp" alt="the most unknown">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media32.jpg" alt="the last dance">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media13.jpg" alt="narcos">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media9.jpg" alt="connected">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-4 col-lg-2 p-1">
+                      <div class="card">
+                          <img src="./assets/img/media0.webp" alt="sherlock">
+                          <div class="card-body d-none">
+                              <div class="row">
+                                  <div class="col d-flex justify-content-between">
+                                      <div class="card-icons">
+                                          <i class="bi bi-play-circle"></i>
+                                          <i class="bi bi-plus-circle"></i>
+                                          <i class="bi bi-hand-thumbs-up"></i>
+                                      </div>
+                                      <div class="card-icons">
+                                          <i class="bi bi-arrow-down-circle"></i>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex align-items-center">
+                                          <p class="text-success m-0 me-2 size  ">XX% compatibile</p>
+                                          <p class="btn btn-outline-secondary p-1 m-0 me-2">16+</p>
+                                          <p class="m-0 me-2 size">16 episodi</p>
+                                          <i class="bi bi-badge-hd card-icons m-0 me-2"></i>
+                                      </div>
+                                      <div class="col-12">
+                                          <p class="text-white-50 h6">Dramma · Cupo · Romanticismo </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                    </div>
+  
+                </div>
+              </div>
+  
+              <button
+                class="carousel-control-prev position-prev"
+                type="button"
+                data-bs-target="#carousel3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next position-next"
+                type="button"
+                data-bs-target="#carousel3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer class="bg-dark pt-5 ps-2 ps-md-0">
+      <div class="container bg-dark text-white-50 h6">
+        <div class="row">
+          <div class="col pb-2">
+            <i class="bi bi-facebook fs-3 me-3 social-icons"></i>
+            <i class="bi bi-instagram fs-3 me-3 social-icons"></i>
+            <i class="bi bi-twitter fs-3 me-3 social-icons"></i>
+            <i class="bi bi-youtube fs-3 me-3 social-icons"></i>
+          </div>
+          <div class="row d-flex pb-2">
+            <div class="col-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="nav-footer">
+                  <a href="#">Audio and Subtitles</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Media Center</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Privacy</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="nav-footer">
+                  <a href="#">Audio Description</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Investor Relations</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Legal Notices</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="nav-footer">
+                  <a href="#">Help Center</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Jobs</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Cookie Preferences</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <ul class="list-unstyled">
+                <li class="nav-footer">
+                  <a href="#">Gift Cards</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Terms of Use</a>
+                </li>
+                <li class="nav-footer">
+                  <a href="#">Corporate Information</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col">
+              <button class="btn btn-outline-secondary rounded-0 text-white-50 h6">
+                Service Code
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="copyright">© 1997-2019 Netflix, Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md-3">
-                            <ul class="list-unstyled">
-                                <li class="nav-footer">
-                                    <a href="#">Gift Cards</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Terms of Use</a>
-                                </li>
-                                <li class="nav-footer">
-                                    <a href="#">Corporate Information</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row pb-3">
-                        <div class="col">
-                            <button class="btn btn-outline-secondary rounded-0 text-white-50">Service Code</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p class="copyright">© 1997-2019 Netflix, Inc.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

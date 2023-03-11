@@ -66,3 +66,56 @@ hr {
         width: 100%;
     }
 }
+
+
+@media screen and (min-width: 576px) {
+    .cards-wrapper {
+        display: flex;
+    }
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+        display: block;
+    }
+}
+
+.card {
+    transition: all 1s ease;
+    border: none !important;
+}
+.card:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 3px 3px 5px #000;
+    -moz-box-shadow: 3px 3px 5px #000;
+    box-shadow: 3px 3px 5px #000;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card-icons {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.card-icons > span:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    background-color: #212529;
+}
+
+.position-next {
+    position: absolute !important;
+    right: -120px !important;
+}
+
+.position-prev {
+    position: absolute !important;
+    left: -120px !important;
+}
+
+.size {
+    font-size: 12px;
+}
